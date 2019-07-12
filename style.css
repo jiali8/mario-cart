@@ -1,0 +1,42 @@
+html {
+    background:url("images/background1edit2.jpg") fixed;
+    background-size: cover; 
+
+}
+
+body {
+    width: 1000px;
+    margin: 0 auto; 
+    background-color: white;  
+    padding: 50px 150px; 
+    margin-top: 50px; 
+    border-radius: 55px; 
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+input, button {
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 20px;
+    padding: 7px 15px; 
+    
+}
+
+input {
+    border-color: rgb(102, 173, 206);
+}
+
+button {
+    background-color:rgb(101, 191, 233);
+    color: white; 
+    letter-spacing: 2px;
+}
+
+#results img {
+    width: 55px;
+    height: 55px;
+    border: 1px solid black; 
+    padding: 8px;
+    margin: 5px;
+}
