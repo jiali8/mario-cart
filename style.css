@@ -10,6 +10,7 @@ body {
     background-color: white;  
     padding: 50px 150px; 
     margin-top: 50px; 
+    margin-bottom: 50px; 
     border-radius: 55px; 
     font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
@@ -31,12 +32,18 @@ button {
     background-color:rgb(101, 191, 233);
     color: white; 
     letter-spacing: 2px;
+    margin-left: 5px; 
 }
 
 #results img {
     width: 55px;
     height: 55px;
-    border: 1px solid black; 
+    border: 1px solid rgb(102, 173, 206);
     padding: 8px;
     margin: 5px;
+    border-radius: 15px;
+}
+
+img {
+    border-radius: 30px; 
 }

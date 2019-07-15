@@ -12,31 +12,37 @@
         <hr> 
 
         <!-- Instructions-->
-        <P> Enter your racer position: <input id="input"> </P>
+        <P> Enter your racer position: <input id="input" type="number" min="1" max="12"> </P>
         <P> Click the button to simulate collecting a Mario Kart Item box. </P>
-        <P> <button id="itemBtn"> Collect</button></P>
+        <P> 
+            <button id="itemBtn"> Collect</button> 
+            <button id="plus10"> +10 </button>
+            <button id="plus50"> +50 </button> 
+            <button id="clear"> Clear </button> 
+        </P>
 
-        <!--Image-->
+        <!--Image and results-->
         <img id="img" src="images/background4crop2.jpg" width=1000px> 
 
-        <!--display results-->
         <p>
-            <strong>TOTALS ➜ </strong>
+            <strong>ITEMS ➜ </strong>
+            Total Items: <span id="total">0</span> |
             Banana: <span id="banana">0</span> |
             Green Shell: <span id="shell">0</span> |
             Star: <span id="star">0</span> |
             Golden Mushroom: <span id="mushroom">0</span> |
             Bullet Bill: <span id="bullet">0</span> 
+
         </p>
 
         <hr>
-        
-        <!--display image results-->
+
         <p id="results"></p>
 
         <!-- Link Javascript-->
         <script src="main.js"> </script>
 
     </body>
+    
 </html>
 
