@@ -18,7 +18,8 @@ document.getElementById('plus100').addEventListener('click', plusHundred);
 
 // Event Functions
 function getItem () {
-
+    
+    //get input value
     let position = document.getElementById('input').value;
 
     //test input variable and update the page 
