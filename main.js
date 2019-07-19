@@ -12,15 +12,13 @@ let numBullet = 0;
 document.getElementById('itemBtn').addEventListener('click',getItem);
 document.getElementById('clear').addEventListener('click', clearResults);
 document.getElementById('plus10').addEventListener('click', plusTen);
-document.getElementById('plus50').addEventListener('click', plusFifty);
 document.getElementById('plus100').addEventListener('click', plusHundred);
-
+document.getElementById('collectXAmount').addEventListener('click', plusXAmount)
 
 // Event Functions
 function getItem () {
-    
-    //get input value
-    let position = document.getElementById('input').value;
+
+    let position = document.getElementById('position').value;
 
     //test input variable and update the page 
     
@@ -115,7 +113,6 @@ function clearResults() {
     document.getElementById('bullet').innerHTML = "0";
     document.getElementById('total').innerHTML = "0";
     document.getElementById('results').innerHTML = ' ';
-    
 }
 
 function plusTen () {
@@ -124,9 +121,15 @@ function plusTen () {
     }
 } 
 
-function plusFifty () {
-    for(let n = 0; n < 50; n++) {
+function plusHundred () {
+    for(let n = 0; n < 100; n++) {
         getItem();
     }
 } 
 
+function plusXAmount () {
+    let userInput = document.getElementById('inputXAmount').value;
+    for(let n = 0; n < userInput; n ++) {
+        getItem();
+    }
+}
